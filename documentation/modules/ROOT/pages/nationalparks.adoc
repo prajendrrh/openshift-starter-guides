@@ -80,7 +80,7 @@ Java::
 --
 Similar to how we used *+Add* before with an existing image, we
 can do the same for specifying a source code repository. Since for this lab you
-have your own git repository, let's use it with a simple link:https://github.com/openshift-roadshow/nationalparks.git[Java] S2I image.
+have your own git repository, let's use it with a simple link:https://github.com/atarazana/nationalparks.git[Java] S2I image.
 
 In the Developer Perspective, click *+Add* in the left navigation, go to the *Git Repository* section and then choose *From Git* option.
 
@@ -92,7 +92,7 @@ Enter the following for Git Repo URL:
 
 [source,bash,role=copypaste]
 ----
-https://github.com/openshift-roadshow/nationalparks.git
+https://github.com/atarazana/nationalparks.git
 ----
 
 OpenShift will automatically guess the Git server type and the programming language used by the source code. You will be now asked to select an *Import Strategy*.
@@ -122,7 +122,7 @@ Verify that *Java* has been selected as your Builder Image, and be sure to selec
 --
 Similar to how we used *+Add* before with an existing image, we
 can do the same for specifying a source code repository. Since for this lab you
-have your own git repository, let's use it with a simple link:https://github.com/openshift-roadshow/nationalparks-dotnet.git[.NET] S2I image.
+have your own git repository, let's use it with a simple link:https://github.com/atarazana/nationalparks-dotnet.git[.NET] S2I image.
 
 In the Developer Perspective, click *+Add* in the left navigation, go to the *Git Repository* section and then choose *From Git* option.
 
@@ -134,7 +134,12 @@ Enter the following for Git Repo URL:
 
 [source,bash,role=copypaste]
 ----
-https://github.com/openshift-roadshow/nationalparks-dotnet.git
+https://github.com/atarazana/nationalparks-dotnet.git
+----
+
+[source,bash,role=copypaste]
+----
+https://github.com/atarazana/nationalparks-dotnet.git
 ----
 
 OpenShift will automatically guess the Git server type and the programming language used by the source code. You will be now asked to select an *Import Strategy*.
@@ -153,14 +158,14 @@ Select *Build Image* as we are going to create the container image from the sour
 
 image::nationalparks-import-from-git-url-builder-dotnet.png[Import from Git]
 
-Select *.NET Core* as your Builder Image, and be sure to select *3.1-el7* to run .NET Core 3.1 applications on a RHEL 7 image.
+Select *.NET Core* as your Builder Image, and be sure to select *7.0-ubi8* to run .NET 7 applications on an UBI 8 image.
 --
 Javascript::
 +
 --
 Similar to how we used *+Add* before with an existing image, we
 can do the same for specifying a source code repository. Since for this lab you
-have your own git repository, let's use it with a simple link:https://github.com/openshift-roadshow/nationalparks-js.git[NodeJS] S2I image.
+have your own git repository, let's use it with a simple link:https://github.com/atarazana/nationalparks-js.git[NodeJS] S2I image.
 
 In the Developer Perspective, click *+Add* in the left navigation, go to the *Git Repository* section and then choose *From Git* option.
 
@@ -172,7 +177,7 @@ Enter the following for Git Repo URL:
 
 [source,bash,role=copypaste]
 ----
-https://github.com/openshift-roadshow/nationalparks-js.git
+https://github.com/atarazana/nationalparks-js.git
 ----
 
 OpenShift will automatically guess the Git server type and the programming language used by the source code. You will be now asked to select an *Import Strategy*.
@@ -198,7 +203,7 @@ Python::
 --
 Similar to how we used *+Add* before with an existing image, we
 can do the same for specifying a source code repository. Since for this lab you
-have your own git repository, let's use it with a simple link:https://github.com/openshift-roadshow/nationalparks-py.git[Python] S2I image.
+have your own git repository, let's use it with a simple link:https://github.com/atarazana/nationalparks-py.git[Python] S2I image.
 
 In the Developer Perspective, click *+Add* in the left navigation, go to the *Git Repository* section and then choose *From Git* option.
 
@@ -210,7 +215,7 @@ Enter the following for Git Repo URL:
 
 [source,bash,role=copypaste]
 ----
-https://github.com/openshift-roadshow/nationalparks-py.git
+https://github.com/atarazana/nationalparks-py.git
 ----
 
 OpenShift will automatically guess the Git server type and the programming language used by the source code. You will be now asked to select an *Import Strategy*.
