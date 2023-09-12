@@ -32,10 +32,18 @@ machine AND would also not require git commit with a push. Read more in the
 === Clone source
 The first step is to clone the MLB source code from GitHub to your workshop environment:
 
+[TIP]
+====
+If Red Hat Dev Spaces is installed you can start it and at the same time cloning the repository if you click on the Dev Spaces Icon as shown in the next picture.
+
+image::mlbparks-devspaces-launch.png[Template YAML edit]
+
+====
+
 [.console-input]
 [source,bash]
 ----
-git clone https://github.com/openshift-roadshow/mlbparks.git
+git clone https://github.com/atarazana/mlbparks.git
 ----
 
 NOTE: We are using Intellij here in the guide for screenshots but this should work regardless of your tool chain. JBoss
@@ -92,6 +100,8 @@ mvn package
 ----
 
 Pay attention to the output location for the ROOT.war, we will need that directory later.
+
+TIP: If you're using Red Hat Dev Spaces you will be already in folder `mlbparks`, in that case you can just run `mvn package`.
 
 [#code_change]
 === Code Change
