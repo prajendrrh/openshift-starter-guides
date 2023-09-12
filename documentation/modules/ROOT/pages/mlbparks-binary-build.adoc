@@ -138,7 +138,7 @@ If you built your war with Maven:
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc start-build bc/mlbparks --from-file=target/ROOT.war --follow
+oc start-build bc/mlbparks --from-file=target/ROOT.war --follow -n %PROJECT%
 ----
 
 NOTE: The --follow is optional if you want to follow the build output in your terminal.

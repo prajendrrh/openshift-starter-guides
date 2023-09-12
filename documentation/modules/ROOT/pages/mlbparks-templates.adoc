@@ -42,7 +42,7 @@ your *Project*. You can see this with the following command:
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc get template
+oc get template -n %PROJECT%
 ----
 
 You will see output like the following:
@@ -58,7 +58,7 @@ Run the following command to instantiate the template:
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc new-app mlbparks -p APPLICATION_NAME=mlbparks
+oc new-app mlbparks -p APPLICATION_NAME=mlbparks -n %PROJECT%
 ----
 
 You will see some output similar to this:
@@ -139,7 +139,7 @@ resources for our *mlbparks* application.
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc get template mlbparks -o yaml
+oc get template mlbparks -o yaml -n %PROJECT%
 ----
 
 But as always, you can use the OpenShift web console to do the same. In the Developer Perspective, click *Advanced -> Search* in the left navigation, then select *Template* from the dropdown, and click *mlbparks*. 
