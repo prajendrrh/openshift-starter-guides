@@ -92,7 +92,7 @@ Enter the following for Git Repo URL:
 
 [source,bash,role=copypaste]
 ----
-https://github.com/atarazana/nationalparks.git
+https://github.com/atarazana/nationalparks-java.git
 ----
 
 OpenShift will automatically guess the Git server type and the programming language used by the source code. You will be now asked to select an *Import Strategy*.
@@ -131,11 +131,6 @@ image::nationalparks-show-add-options.png[Add to Project]
 The *Import from Git* workflow will guide you through the process of deploying your app based on a few selections.
 
 Enter the following for Git Repo URL:
-
-[source,bash,role=copypaste]
-----
-https://github.com/atarazana/nationalparks-dotnet.git
-----
 
 [source,bash,role=copypaste]
 ----
