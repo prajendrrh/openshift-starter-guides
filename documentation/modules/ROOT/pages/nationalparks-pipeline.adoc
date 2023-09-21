@@ -282,12 +282,7 @@ spec:
     - name: deploy
       params:
         - name: SCRIPT
-          value: kubectl $@
-        - name: ARGS
-          value:
-            - rollout
-            - status
-            - deploy/$(params.APP_NAME)
+          value: oc rollout restart deploy/$(params.APP_NAME)
       runAfter:
         - s2i-dotnet
       taskRef:
@@ -413,10 +408,7 @@ spec:
         - name: SCRIPT
           value: kubectl $@
         - name: ARGS
-          value:
-            - rollout
-            - status
-            - deploy/$(params.APP_NAME)
+          value: oc rollout restart deploy/$(params.APP_NAME)
       runAfter:
         - build
       taskRef:
@@ -517,12 +509,7 @@ spec:
     - name: deploy
       params:
         - name: SCRIPT
-          value: kubectl $@
-        - name: ARGS
-          value:
-            - rollout
-            - status
-            - deploy/$(params.APP_NAME)
+          value: oc rollout restart deploy/$(params.APP_NAME)
       runAfter:
         - build
       taskRef:
