@@ -20,7 +20,7 @@ control whether or not to enable the debug port. All we need to do is set an env
 
 [source,bash,role=copypaste]
 ----
-oc set env dc/mlbparks DEBUG=true
+oc set env dc/mlbparks DEBUG=true -n %PROJECT%
 ----
 
 This will force a redeploy of our MLBparks pod, this time with the JDWT transport enabled and serving on port 8787.
@@ -35,7 +35,7 @@ Let's take a closer look at the service in question:
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-oc describe svc/mlbparks
+oc describe svc/mlbparks -n %PROJECT%
 ----
 
 [.console-output]
@@ -70,7 +70,7 @@ Now that our deployment is setup for debugging, it will be listening on port 878
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-oc port-forward svc/mlbparks 8787:8787
+oc port-forward -n %PROJECT% svc/mlbparks 8787:8787
 ----
 
 So now when we connect on `localhost:8787` it will get forwarded to the mlbparks instance running in the pod.  

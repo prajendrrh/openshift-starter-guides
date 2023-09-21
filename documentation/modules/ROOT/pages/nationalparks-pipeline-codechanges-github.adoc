@@ -45,7 +45,7 @@ Java::
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc create -f +https://raw.githubusercontent.com/openshift-roadshow/nationalparks/master/pipeline/nationalparks-triggers.yaml+ -n %PROJECT%
+oc create -f +https://raw.githubusercontent.com/atarazana/nationalparks-java/master/pipeline/nationalparks-triggers.yaml+ -n %PROJECT%
 ----
 --
 .NET::
@@ -54,7 +54,7 @@ oc create -f +https://raw.githubusercontent.com/openshift-roadshow/nationalparks
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc create -f +https://raw.githubusercontent.com/openshift-roadshow/nationalparks-dotnet/master/Pipelines/nationalparks-triggers-all.yaml+ -n %PROJECT%
+oc create -f +https://raw.githubusercontent.com/atarazana/nationalparks-dotnet/master/Pipelines/nationalparks-triggers-all.yaml+ -n %PROJECT%
 ----
 --
 Javascript::
@@ -63,7 +63,7 @@ Javascript::
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc create -f +https://raw.githubusercontent.com/openshift-roadshow/nationalparks-js/master/pipelines/nationalparks-triggers-all.yaml+ -n %PROJECT%
+oc create -f +https://raw.githubusercontent.com/atarazana/nationalparks-js/master/pipelines/nationalparks-triggers-all.yaml+ -n %PROJECT%
 ----
 --
 Python::
@@ -72,7 +72,7 @@ Python::
 [.console-input]
 [source,bash,subs="+attributes,macros+"]
 ----
-oc create -f +https://raw.githubusercontent.com/openshift-roadshow/nationalparks-py/master/pipelines/nationalparks-triggers-all.yaml+ -n %PROJECT%
+oc create -f +https://raw.githubusercontent.com/atarazana/nationalparks-py/master/pipelines/nationalparks-triggers-all.yaml+ -n %PROJECT%
 ----
 --
 ====
@@ -90,7 +90,7 @@ image::devops-pipeline-triggers-eventlistener.png[EventListener created]
 
 // In this step we will fork the original `nationalparks` repository to apply our changes and automatically trigger the Pipeline through a link:https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/about-webhooks[GitHub Webhook,window='_blank'] that we're going to configure.
 
-// Go to link:https://github.com/openshift-roadshow/nationalparks[Nationalparks,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
+// Go to link:https://github.com/atarazana/nationalparks[Nationalparks,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
 
 // image::nationalparks-codechanges-github-fork-1.png[Fork Repository]
 

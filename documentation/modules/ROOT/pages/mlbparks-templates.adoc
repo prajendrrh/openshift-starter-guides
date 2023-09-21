@@ -76,7 +76,7 @@ You will see some output similar to this:
         * Application Name=mlbparks
         * Application route=
         * Mongodb App=mongodb-mlbparks
-        * Git source repository=https://github.com/openshift-roadshow/mlbparks.git
+        * Git source repository=https://github.com/atarazana/mlbparks.git
         * Git branch/tag reference=master
         * Maven mirror url=
         * Database name=mongodb

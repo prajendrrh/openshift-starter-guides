@@ -69,7 +69,7 @@ GitLab, or any other server that speaks Git. You can even register webhooks in
 your Git server to initiate OpenShift builds triggered by any update to the
 application code!
 
-link:https://github.com/openshift-roadshow/nationalparks-dotnet.git[NationalParks GitHub Repository]
+link:https://github.com/atarazana/nationalparks-dotnet.git[NationalParks GitHub Repository]
 
 Later in the lab, we want you to make a code change and then rebuild your
 application. This is a fairly simple .NET application.
@@ -91,7 +91,7 @@ Enter the following for Git Repo URL:
 
 [source,role=copypaste]
 ----
-https://github.com/openshift-roadshow/nationalparks-dotnet.git
+https://github.com/atarazana/nationalparks-dotnet.git
 ----
 
 Select *.NET Core* as your Builder Image.

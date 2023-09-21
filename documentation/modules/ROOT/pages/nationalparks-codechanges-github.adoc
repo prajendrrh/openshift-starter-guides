@@ -41,7 +41,7 @@ In this step we will fork the original `nationalparks` repository to apply our c
 Java::
 +
 --
-Go to link:https://github.com/openshift-roadshow/nationalparks[Nationalparks,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
+Go to link:https://github.com/atarazana/nationalparks[Nationalparks,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
 
 image::nationalparks-codechanges-github-fork-1.png[Fork Repository]
 
@@ -54,7 +54,7 @@ Your repository is forked now, we can start adding our automation to that.
 .NET::
 +
 --
-Go to link:https://github.com/openshift-roadshow/nationalparks-dotnet[nationalparks-dotnet,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
+Go to link:https://github.com/atarazana/nationalparks-dotnet[nationalparks-dotnet,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
 
 image::nationalparks-codechanges-github-fork-dotnet-1.png[Fork Repository]
 
@@ -67,7 +67,7 @@ Your repository is forked now, we can start adding our automation to that.
 Javascript::
 +
 --
-Go to link:https://github.com/openshift-roadshow/nationalparks-js[Nationalparks-js,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
+Go to link:https://github.com/atarazana/nationalparks-js[Nationalparks-js,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
 
 image::nationalparks-codechanges-github-fork-js-1.png[Fork Repository]
 
@@ -80,7 +80,7 @@ Your repository is forked now, we can start adding our automation to that.
 Python::
 +
 --
-Go to link:https://github.com/openshift-roadshow/nationalparks-py[Nationalparks-py,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
+Go to link:https://github.com/atarazana/nationalparks-py[Nationalparks-py,window='_blank'] repository. From top-right side, click to *Fork* to start forking it into your account.
 
 image::nationalparks-codechanges-github-fork-py-1.png[Fork Repository]
 

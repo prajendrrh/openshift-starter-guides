@@ -422,7 +422,7 @@ jobs:
 GitHub Actions can invoke script in the path of the workflow.
 This script will check if the update the image hash into the Nationalpark Deployment with the one created within this job, otherwise if will create a new Deployment if this is not present yet.
 
-.link:https://github.com/openshift-roadshow/nationalparks/blob/master/.github/script.sh[script.sh,window='_blank']
+.link:https://github.com/atarazana/nationalparks/blob/master/.github/script.sh[script.sh,window='_blank']
 [source,bash]
 ----
 #!/bin/bash
