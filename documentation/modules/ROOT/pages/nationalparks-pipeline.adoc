@@ -406,8 +406,6 @@ spec:
     - name: deploy
       params:
         - name: SCRIPT
-          value: kubectl $@
-        - name: ARGS
           value: oc rollout restart deploy/$(params.APP_NAME)
       runAfter:
         - build
